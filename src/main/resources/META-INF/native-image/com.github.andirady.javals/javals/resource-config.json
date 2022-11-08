@@ -1,0 +1,20 @@
+{
+  "resources":{
+  "includes":[{
+      "pattern":"\\QMETA-INF/services/java.nio.file.spi.FileSystemProvider\\E"
+    }]},
+  "bundles":[
+    {
+      "name":"com.sun.tools.javac.resources.compiler",
+      "classNames":["com.sun.tools.javac.resources.compiler"]
+    }, 
+    {
+      "name":"com.sun.tools.javac.resources.ct",
+      "classNames":["com.sun.tools.javac.resources.ct"]
+    }, 
+    {
+      "name":"com.sun.tools.javac.resources.javac",
+      "classNames":["com.sun.tools.javac.resources.javac"]
+    }
+  ]
+}
