@@ -1,4 +1,4 @@
-package com.github.andirady.javals;
+package com.github.andirady.jlangd;
 
 import com.github.andirady.jlangd.ProjectReader;
 import java.io.*;

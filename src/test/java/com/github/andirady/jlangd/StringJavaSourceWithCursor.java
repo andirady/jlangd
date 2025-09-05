@@ -1,4 +1,4 @@
-package com.github.andirady.javals;
+package com.github.andirady.jlangd;
 
 import com.github.andirady.jlangd.JavaSource;
 import java.net.URI;
