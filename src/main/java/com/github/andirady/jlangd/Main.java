@@ -2,6 +2,7 @@ package com.github.andirady.jlangd;
 
 import java.io.*;
 import java.util.List;
+import java.util.UUID;
 import java.util.concurrent.*;
 import java.util.logging.FileHandler;
 import java.util.logging.*;
@@ -107,7 +108,7 @@ public class Main implements LanguageServer, LanguageClientAware {
             var t0 = System.currentTimeMillis();
             var folders = params.getWorkspaceFolders();
             if (folders == null) {
-                folders = List.of(new WorkspaceFolder(params.getRootUri()));
+                folders = List.of(new WorkspaceFolder(params.getRootUri(), UUID.randomUUID().toString()));
             }
 
             folders.parallelStream().map(WorkspaceFolder::getUri).map(Projects::forUri)
